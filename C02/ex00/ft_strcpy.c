@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francisco.henriques <francisco.henriques@s +#+  +:+       +#+        */
+/*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/10 22:30:02 by francisco.henriq  #+#    #+#             */
-/*   Updated: 2026/09/12 00:25:30 by francisco.henriq ###   ########.fr       */
+/*   Created: 2026/09/14 12:11:44 by msouza-c          #+#    #+#             */
+/*   Updated: 2026/09/14 12:30:14 by msouza-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,17 @@ char	*ft_strcpy(char *dest, char *src)
 
 // #include <string.h>
 // #include <stdio.h>
-// int main(void)
+// int main(int argc, char *argv[])
 // {
-// 	char str1[] = "how are you?";
-// 	char str2[30];
-// 	char *resul = ft_strcpy(str2, str1);
-// 	printf("%s\n", resul);
-// 	strcpy(str2, str1);
-// 	printf("%s\n", str2);
-
+// 	if (argc == 3)
+// 	{
+// 	printf("%s\n", argv[1]);
+// 	ft_strcpy(argv[1], argv[2]);
+// 	printf("%s\n", argv[1]);
+// 	}
+// 	else
+// 	{
+// 		printf("This function takes two arguments.\n");
+// 	}
 // 	return (0) ;
 // }

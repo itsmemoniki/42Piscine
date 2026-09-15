@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francisco.henriques <francisco.henriques@s +#+  +:+       +#+        */
+/*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/13 23:57:05 by francisco.henriq  #+#    #+#             */
-/*   Updated: 2026/09/13 23:57:12 by francisco.henriq ###   ########.fr       */
+/*   Created: 2026/09/14 12:30:45 by msouza-c          #+#    #+#             */
+/*   Updated: 2026/09/15 14:27:40 by msouza-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,25 +32,35 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 }
 
 // #include <string.h>
-// #include <unistd.h>
-// int main(void)
-// {
-//     char *src = "howareyou";
-//     char dest[] = "ameixa";
-// 	unsigned int n = 4;
-//     ft_strncpy(dest, src, n);
-// 	int i = 0;
+// #include <stdlib.h>
+// #include <stdio.h>
 
-// 	while (i < n)
-// 	{
-// 		if (!dest[i])
-// 		{
-// 			write(1, "\\0", 2);
-// 		}
-// 		else
-// 		{
-// 			write(1, &dest[i], 1);
-// 		}
-// 		i++;
-// 	}
+// int main(int argc, char *argv[])
+// {
+//     if (argc == 4)
+//     {
+
+// 	    unsigned int n = (unsigned int)strtoul(argv[3], NULL, 10);
+// 		char *dest = argv[1];
+// 		char *src = argv[2];
+// 		unsigned int i = 0;
+
+// 		ft_strncpy(dest, src, n);
+//         while (i < n)
+//         {
+//             if (!argv[1][i])
+//             {
+//                 printf("/0");
+//             }
+//             else
+//             {
+//                 printf("%c", argv[1][i]);
+//             }
+//             i++;
+//         }
+//     }
+//     else
+//     {
+//         printf("This function takes three arguments\n");
+//     }
 // }
