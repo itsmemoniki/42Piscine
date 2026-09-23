@@ -49,14 +49,13 @@ int	ft_atoi(char *str)
     }
 	return (sign * nbr);
 }
-/*
-#include <stdio.h>
-int main (int argc, char *argv[])
-{
-	if (argc == 2)
-	{
-		printf("%d\n", ft_atoi(argv[1]));
-	}
-	return (0);
-}
-*/
+
+// #include <stdio.h>
+// int main (int argc, char *argv[])
+// {
+// 	if (argc == 2)
+// 	{
+// 		printf("%d\n", ft_atoi(argv[1]));
+// 	}
+// 	return (0);
+// }

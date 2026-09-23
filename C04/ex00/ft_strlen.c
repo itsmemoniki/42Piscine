@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
+/*   By: francisco.henriques <francisco.henriques@s +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/21 16:06:36 by msouza-c          #+#    #+#             */
-/*   Updated: 2026/09/21 16:10:22 by msouza-c         ###   ########.fr       */
+/*   Updated: 2026/09/23 18:48:29 by francisco.henriq ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
