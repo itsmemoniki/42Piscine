@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_sort_params.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/09/24 15:32:30 by msouza-c          #+#    #+#             */
+/*   Updated: 2026/09/24 15:54:48 by msouza-c         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
 void	char_cmp(char **str1, char **str2)
 {
-	char *tmp;
-	int i;
+	char	*tmp;
+	int		i;
 
 	i = 0;
 	while ((*str1)[i] && (*str1)[i] == (*str2)[i])
@@ -15,9 +27,10 @@ void	char_cmp(char **str1, char **str2)
 		*str2 = tmp;
 	}
 }
+
 void	print(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i])
@@ -27,10 +40,11 @@ void	print(char *str)
 	}
 	write (1, "\n", 1);
 }
+
 int	main(int argc, char *argv[])
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 1;
 	if (argc > 0)
@@ -52,4 +66,5 @@ int	main(int argc, char *argv[])
 		print(argv[i]);
 		i++;
 	}
+	return (0);
 }

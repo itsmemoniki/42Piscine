@@ -1,4 +1,14 @@
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/09/21 14:37:47 by msouza-c          #+#    #+#             */
+/*   Updated: 2026/09/21 15:55:34 by msouza-c         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 char	*ft_strstr(char *str, char *to_find)
 {
@@ -15,15 +25,15 @@ char	*ft_strstr(char *str, char *to_find)
 		{
 			if (!to_find[j + 1])
 			{
-				return	(&str[i]);
+				return (&str[i]);
 			}
 			j++;
 		}
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
-
+// #include <stdio.h>
 // int main(int argc, char *argv[])
 // {
 // 	if (argc == 3)

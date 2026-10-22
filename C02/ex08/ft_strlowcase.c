@@ -6,7 +6,7 @@
 /*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 12:27:25 by msouza-c          #+#    #+#             */
-/*   Updated: 2026/09/15 12:31:34 by msouza-c         ###   ########.fr       */
+/*   Updated: 2026/09/18 13:48:57 by msouza-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,16 +26,16 @@ char	*ft_strlowcase(char *str)
 	return (str);
 }
 
-// #include <stdio.h>
-// int main(int argc, char *argv[])
-// {
-// 	if (argc == 2)
-// 	{
-// 		ft_strlowcase(argv[1]);
-// 		printf("%s\n", argv[1]);
-// 	}
-// 	else
-// 	{
-// 		printf("this function takes an argument.\n");
-// 	}
-// }
+#include <stdio.h>
+int main(int argc, char *argv[])
+{
+	if (argc == 2)
+	{
+		ft_strlowcase(argv[1]);
+		printf("%s\n", argv[1]);
+	}
+	else
+	{
+		printf("this function takes an argument.\n");
+	}
+}

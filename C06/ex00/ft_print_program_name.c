@@ -1,16 +1,30 @@
-#include <unistd.h>
-int main(int argc, char *argv[])
-{
-    int i;
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_program_name.c                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/09/24 15:28:15 by msouza-c          #+#    #+#             */
+/*   Updated: 2026/09/24 15:42:50 by msouza-c         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-    i = 0;
-    if (argc)
-    {
-        while (argv[0][i])
-        {
-            write (1, &argv[0][i], 1);
-            i++;
-        }
-        write (1, "\n", 1);
-    }
+#include <unistd.h>
+
+int	main(int argc, char *argv[])
+{
+	int	i;
+
+	i = 0;
+	if (argc)
+	{
+		while (argv[0][i])
+		{
+			write (1, &argv[0][i], 1);
+			i++;
+		}
+		write (1, "\n", 1);
+	}
+	return (0);
 }
