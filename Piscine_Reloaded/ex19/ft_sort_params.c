@@ -4,6 +4,20 @@ void 	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
+
+void	strprint(char *s1)
+{
+	int i;
+
+	i = 0;
+	while (s1[i])
+	{
+		ft_putchar(s1[i]);
+		i++;
+	}
+	ft_putchar('\n');
+}
+
 void	strswap(char **s1, char **s2)
 {
 	int i;
@@ -24,12 +38,25 @@ void	strswap(char **s1, char **s2)
 
 int	main(int argc, char *argv[])
 {
-	int args;
+	int i;
+    int j;
 
-	args = 1;
-	while (args < argc)
+    i = 1;
+    (void)argc;
+	while (argv[i])
 	{
-		strswap(argv[args], argv[args + 1]);
-		args++;
+        j = i + 1;
+        while (argv[j])
+        {
+            strswap(&argv[i], &argv[j]);
+            j++;
+        }
+        i++;
 	}
+    i = 1;
+    while (argv[i])
+    {
+        strprint(argv[i]);
+        i++;
+    }
 }
